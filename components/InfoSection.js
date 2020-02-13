@@ -1,19 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class InfoSection extends React.Component {
-	render() {
-		return (
-			<View style={styles.container}>
-				<Text style={styles.headerText}>{this.props.location}</Text>
-				{this.props.icon}
-				<View style={styles.horizontal}>
-					<Text style={styles.headerText}>Temperatur:</Text>
-					<Text>{this.props.temperature}</Text>
-				</View>
+export default function InfoSection(props) {
+	return (
+		<View style={styles.container}>
+			<Text style={styles.headerText}>{props.location}</Text>
+			{props.icon}
+			<View style={styles.horizontal}>
+				<Text style={styles.headerText}>Temperatur:</Text>
+				<Text>{props.temperature}</Text>
 			</View>
-		);
-	}
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({

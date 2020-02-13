@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text, FlatList, View, Dimensions, SafeAreaView } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { FlatList, Dimensions } from 'react-native';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 import constants from '../constants/constants';
